@@ -16,3 +16,6 @@ Nothing
 - Combine Appbar and Tab layout then if scroll, the Appbar is gone and tab layout is stack on top
 - Image and Appbar, if scroll, image increase the height until same with height of action bar
 commonly and change to color of theme
+- Image and Appbar, if scroll, image increase the height to attr/size of appbar and change to close theme
+- Transparent status bar
+- Navigation icon tint dynamic based on its theme (light/dark)
