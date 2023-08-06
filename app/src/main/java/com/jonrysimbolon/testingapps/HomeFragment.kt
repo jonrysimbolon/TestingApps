@@ -5,14 +5,17 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.annotation.StringRes
-import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.appbar.MaterialToolbar
 import com.google.android.material.tabs.TabLayoutMediator
 
-class HomeFragment : Fragment() {
+class HomeFragment(
+    private val sectionsPagerAdapter: SectionsPagerAdapter
+) : Fragment() {
+
+    //private val sectionsPagerAdapter: SectionsPagerAdapter by inject { parametersOf(requireParentFragment()) }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -36,9 +39,6 @@ class HomeFragment : Fragment() {
             }
         }
 
-        val sectionsPagerAdapter = SectionsPagerAdapter(
-            (requireActivity() as AppCompatActivity)
-        )
         view.findViewById<ViewPager2>(R.id.view_pager).adapter = sectionsPagerAdapter
         TabLayoutMediator(
             view.findViewById(R.id.tabs),

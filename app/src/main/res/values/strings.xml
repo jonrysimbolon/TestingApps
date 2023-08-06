@@ -226,4 +226,6 @@
     <string name="search_hint">What\'s up!</string>
     <string name="tab_1">Tab 1</string>
     <string name="tab_2">Tab 2</string>
+    <string name="customTitle">Custom title</string>
+    <string name="hello_world">Hello world</string>
 </resources>
