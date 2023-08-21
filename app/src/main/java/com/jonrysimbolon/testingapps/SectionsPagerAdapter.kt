@@ -1,10 +1,11 @@
 package com.jonrysimbolon.testingapps
 
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter
 
 class SectionsPagerAdapter(
-    fragment: Fragment
+    fragment: AppCompatActivity
 ) : FragmentStateAdapter(fragment) {
 
     override fun createFragment(position: Int): Fragment =

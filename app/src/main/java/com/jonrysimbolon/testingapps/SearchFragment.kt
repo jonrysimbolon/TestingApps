@@ -25,7 +25,7 @@ class SearchFragment : Fragment() {
             when (resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK) {
                 Configuration.UI_MODE_NIGHT_NO -> setNavigationIconTint(Color.BLACK)
                 Configuration.UI_MODE_NIGHT_YES -> setNavigationIconTint(Color.WHITE)
-                Configuration.UI_MODE_NIGHT_UNDEFINED -> {}
+                Configuration.UI_MODE_NIGHT_UNDEFINED -> Unit
             }
             setNavigationOnClickListener {
                 findNavController().popBackStack()
